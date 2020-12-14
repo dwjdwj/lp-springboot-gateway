@@ -1,6 +1,6 @@
 user:
   application:
-    shout-name: test-service-1
+    shout-name: test-service
 
 #logging:
 #  config: classpath:logback-spring.xml

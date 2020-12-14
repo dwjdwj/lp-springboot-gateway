@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Created by qirong on 2019/4/25.
+ * Created by qirong on 2020/12/13.
  */
 @ApiOperation(value = "测试接口")
 @RestController
@@ -41,7 +41,7 @@ public class TestController {
     @GetMapping("test")
     @ApiOperation(value = "测试服务", notes = "测试服务")
     public String test() {
-        return "success";
+        return "success 11111";
     }
 
     @GetMapping("testCache")
