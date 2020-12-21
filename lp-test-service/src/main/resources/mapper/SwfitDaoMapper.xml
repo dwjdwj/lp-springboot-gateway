@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cn.lp.dao.SwfitDao">
-    <select id="findAllSwfit" resultType="Swfitentity">
-            select id,username from user
-        </select>
-    <insert id="createSwfit" parameterType="Swfitentity">
-        insert into user values(#{id},#{username})
-    </insert>
-    <update id="updateSwfit" parameterType="Swfitentity">
-        update user set username=#{username}
-        where id=#{id}
-    </update>
-    <delete id="delSwfit" parameterType="String">
-        delete from user where id=#{id}
-    </delete>
+    <select id="findUserByName" resultMap="com.cn.lp.entity.Swfitentity" parameterType="java.lang.String">
+        select username,id
+        from user
+        where name=#{userName}
+    </select>
 </mapper>
 

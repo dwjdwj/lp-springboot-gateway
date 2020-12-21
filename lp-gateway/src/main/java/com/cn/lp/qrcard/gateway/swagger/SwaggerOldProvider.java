@@ -10,8 +10,6 @@ import springfox.documentation.swagger.web.SwaggerResourcesProvider;
 import java.util.ArrayList;
 import java.util.List;
 
-//@Component
-//@Primary
 public class SwaggerOldProvider implements SwaggerResourcesProvider {
 
     public static final String API_URI = "/v2/api-docs";

@@ -12,25 +12,13 @@ import java.util.List;
 public class SwfitServiceImpl implements SwfitService {
     @Autowired
     SwfitDao swfitDao;
+    @Override
+    public Swfitentity findUserByName(String userName) {
+        System.out.println("传入值："+userName);
 
-    //@Override
-    public void createSwfit(Swfitentity swfit) {
-        swfitDao.createSwfit(swfit);
-    }
+        Swfitentity swift = swfitDao.findUserByName(userName);
 
-    //@Override
-    public List<Swfitentity> findAllSwfit() {
-        return swfitDao.findAllSwfit();
-    }
-
-    //@Override
-    public void delSwfit(String id) {
-
-    }
-
-   // @Override
-    public void updateSwfit(Swfitentity swfit) {
-
+        return  swift;
     }
 }
 

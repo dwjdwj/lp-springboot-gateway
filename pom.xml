@@ -18,6 +18,6 @@
         <module>lp-test-service</module>
         <module>lp-test-service-1</module>
         <module>lp-config</module>
-        <module>lp-logging</module>
+    <module>lp-logging</module>
     </modules>
 </project>

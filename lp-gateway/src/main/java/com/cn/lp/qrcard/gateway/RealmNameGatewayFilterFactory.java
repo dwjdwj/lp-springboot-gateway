@@ -1,3 +1,4 @@
+/*
 package com.cn.lp.qrcard.gateway;
 
 import org.slf4j.Logger;
@@ -11,10 +12,12 @@ import org.springframework.web.server.ServerWebExchange;
 
 import java.net.URI;
 
+*/
 /**
  * 域名过滤器，添加GateWay域名到Request中给下流服务器使用
- * Created by qirong on 2019/5/27.
- */
+ * Created by qirong on 2020/12/16
+ *//*
+
 @Component
 public class RealmNameGatewayFilterFactory extends AbstractGatewayFilterFactory<Object> {
 
@@ -37,4 +40,4 @@ public class RealmNameGatewayFilterFactory extends AbstractGatewayFilterFactory<
         };
     }
 
-}
+}*/

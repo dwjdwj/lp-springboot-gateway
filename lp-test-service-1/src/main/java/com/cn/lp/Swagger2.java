@@ -15,7 +15,7 @@ import java.util.Objects;
 
 /**
  * @author qirong
- * @date 2018/7/26
+ * @date 2020/12/16
  */
 @Configuration(value = "Swagger2")
 @EnableSwagger2
@@ -39,7 +39,7 @@ public class Swagger2 {
             //页面标题
             .title("Spring Boot 测试使用 Swagger2 构建 RESTful API")
             //创建人
-            .contact(new Contact("乐聚", "http://weibo.com/p/1005051924942345", ""))
+            .contact(new Contact("dwj", "-------", "376337326@qq.com"))
             //版本号
             .version("1.0")
             //描述

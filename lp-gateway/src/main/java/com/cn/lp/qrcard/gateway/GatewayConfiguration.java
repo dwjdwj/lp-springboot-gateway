@@ -1,3 +1,4 @@
+/*
 package com.cn.lp.qrcard.gateway;
 
 import com.alibaba.csp.sentinel.adapter.gateway.common.rule.GatewayFlowRule;
@@ -75,11 +76,13 @@ public class GatewayConfiguration {
                 .body(fromObject(ex.getClass().getSimpleName())));
     }
 
-    /**
+    */
+/**
      * 设置跨域
      *
      * @return
-     */
+     *//*
+
     @Bean
     public WebFilter corsFilter() {
         return (ServerWebExchange ctx, WebFilterChain chain) -> {
@@ -111,3 +114,4 @@ public class GatewayConfiguration {
     }
 
 }
+*/

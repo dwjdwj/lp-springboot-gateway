@@ -1,3 +1,4 @@
+/*
 package com.cn.lp.qrcard.gateway;
 
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
@@ -10,9 +11,11 @@ import reactor.core.publisher.Mono;
 
 import java.util.ArrayList;
 
+*/
 /**
  * 多个消息头处理方案
- */
+ *//*
+
 public class CorsResponseHeaderFilter implements GlobalFilter, Ordered {
 
     @Override
@@ -39,4 +42,4 @@ public class CorsResponseHeaderFilter implements GlobalFilter, Ordered {
         }));
     }
 
-}
+}*/
