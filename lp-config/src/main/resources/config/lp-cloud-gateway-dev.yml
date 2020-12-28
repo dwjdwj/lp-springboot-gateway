@@ -39,21 +39,20 @@ spring:
               args:
                 name: fallbackcmd
                 fallbackUri: forward:/fallback
-
-#        - id: test-service-1
-#          #eureka上的服务名
-#          uri: lb://LP-TEST-SERVICE
-#          predicates:
-#            - Path=/**
-#           # - Weight=group1, 5
-#          filters:
-#            # 去掉/qa/ 比如访问url是/qa/test 经过gateway后，后面服务拿到的就只有/test
-#            #StripPrefix=1
-#            - RewritePath=/employee/(?<path>.*), /$\{path}
-#            - name: Hystrix
-#              args:
-#                name: fallbackcmd
-#                fallbackUri: forward:/fallback
+        - id: message-service
+          #eureka上的服务名
+          uri: lb://LP-MESSAGE-SERVICE
+          predicates:
+            - Path=/message/**
+            - Weight=group1, 5
+          filters:
+            # 去掉/qa/ 比如访问url是/qa/test 经过gateway后，后面服务拿到的就只有/test
+            #- StripPrefix=1
+            - RewritePath=/employee/(?<path>.*), /$\{path}
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
 #熔断时间
 hystrix:
   command:

@@ -4,6 +4,20 @@ eureka:
       defaultZone: http://127.0.0.1:8013/eureka
   instance:
     prefer-ip-address: true
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: swift
+    password: 123456
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.cn.lp.entity
+
 #    status-page-url-path: ${server.servlet.context-path}/actuator/info
 #    health-check-url-path: ${server.servlet.context-path}/actuator/health
     # 显示版本号

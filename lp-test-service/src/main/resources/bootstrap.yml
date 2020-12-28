@@ -12,8 +12,16 @@ server:
 #    context-path: /test
   tomcat:
     uri-encoding: UTF-8
-
 spring:
+#  datasource:
+#    url: jdbc:oracle:thin:@localhost:1521:orcl
+#    username: swift
+#    password: 123456
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    max-idle: 10
+#    max-wait: 10000
+#    min-idle: 5
+#    initial-size: 5
   application:
     name: lp-test-service
    # name: lp-${user.application.shout-name}
@@ -41,4 +49,10 @@ spring:
       #表示以 100% 的概率将链路的数据上传给 Zipkin Server ， 在默认情况下 ， 该值为0.1
   zipkin:
     base-url: http://localhost:9411/
+feign:
+  hystrix:
+    enabled: true
 #========================================
+#mybatis:
+#  mapper-locations: classpath:mapper/*Mapper.xml
+#  type-aliases-package: com.cn.lp.entity

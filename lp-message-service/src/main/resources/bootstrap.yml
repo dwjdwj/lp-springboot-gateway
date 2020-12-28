@@ -1,20 +1,24 @@
 user:
   application:
-    shout-name: test-service
+    shout-name: message-service
 
 #logging:
 #  config: classpath:logback-spring.xml
 
 server:
-  port: ${SERVER_PORT:8021}
+  port: 8021
 #  servlet:
 #    context-path: /test
   tomcat:
     uri-encoding: UTF-8
 
 spring:
+#  http:
+#    encoding:
+#      charset: utf-8
+#      enabled: true
   application:
-    name: lp-${user.application.shout-name}
+    name: lp-message-service
   cloud:
     config:
       uri:
@@ -39,3 +43,5 @@ spring:
       #表示以 100% 的概率将链路的数据上传给 Zipkin Server ， 在默认情况下 ， 该值为0.1
   zipkin:
     base-url: http://localhost:9411/
+
+

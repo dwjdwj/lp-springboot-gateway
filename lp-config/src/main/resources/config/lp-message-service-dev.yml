@@ -1,5 +1,7 @@
 eureka:
   client:
+#    register-with-eureka: false
+#    fetch-registry: false
     service-url:
       defaultZone: http://127.0.0.1:8013/eureka
   instance:
@@ -7,7 +9,7 @@ eureka:
 #    status-page-url-path: ${server.servlet.context-path}/actuator/info
 #    health-check-url-path: ${server.servlet.context-path}/actuator/health
     # 显示版本号
-    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+      #   instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
 #    metadata-map:
 #      management:
         # 上传上下文到eureka

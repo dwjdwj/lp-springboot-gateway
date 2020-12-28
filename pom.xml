@@ -16,7 +16,8 @@
         <module>lp-gateway</module>
         <module>lp-springboot-admin</module>
         <module>lp-test-service</module>
-        <module>lp-test-service-1</module>
+        <module>lp-test-service-2</module>
+        <module>lp-Message-service</module>
         <module>lp-config</module>
     <module>lp-logging</module>
     </modules>

@@ -6,10 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    @RequestMapping("/hello")
-    public String hello(String name){
-        return "hi " + name;
-    }
+
 
     @RequestMapping("/timeout")
     public String timeout(){

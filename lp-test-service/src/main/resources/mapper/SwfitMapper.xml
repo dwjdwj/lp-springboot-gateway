@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cn.lp.mapper.SwfitMapper">
+    <select id="findUserByName" resultType="com.cn.lp.entity.Swfitentity" parameterType="java.lang.String">
+        select "username","id"
+        from "user"
+        where "username"=#{userName}
+    </select>
+</mapper>
+
